@@ -1,22 +1,41 @@
-//arreglos
-
-// const arreglo = new Array(100)
-const arreglo = [1,2,3,4];
-// arreglo.push(1)
-// arreglo.push(2)
-// arreglo.push(3)
-
-let arreglo2 = [...arreglo, 5]
-// let arreglo2 = arreglo
-// arreglo2.push(5)
-
-const arreglo3 =arreglo2.map(function(numero){
-    return numero*2;
-});
-
-console.log(arreglo);
-console.log(arreglo2);
-console.log(arreglo3);
+// const saludar = function(nombre){
+//     return `hi, ${nombre}`;
+// }
+const saludar2= (nombre)=> `hi, ${nombre}`;
+const saludar4= ()=> `hello world`;
 
 
 
+console.log(saludar2('alexxx'));
+console.log(saludar4());
+
+const getUser=()=>{
+    return {
+        uid:'ABC123',
+        username:'dddddd'
+    }
+}
+
+console.log(getUser())
+
+
+//tarea
+
+// function getUsuarioActivo(nombre){
+//     return{
+//         uid:'abc456',
+//         username: nombre,
+//     }
+// }
+
+// const usuarioActivo= getUsuarioActivo('fernando')
+// console.log(usuarioActivo)
+
+const getUsuarioActivo= (nombre)=>({
+    uid:'abc456',
+    username: nombre,
+})
+
+
+const usuarioActivo= getUsuarioActivo('fernando')
+console.log(usuarioActivo)
