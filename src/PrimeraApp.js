@@ -3,14 +3,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //fc
-const PrimeraApp = ({ saludo }) =>{
+const PrimeraApp = ({ saludo, subtitulo}) =>{
 
     // const saludo = 'Hola Mundo';
 
     return(
         <>
             <h1>{ saludo }</h1>
-            <p>Mi primera aplicación</p>
+            <p>{ subtitulo }</p>
         </>
     );
 }
@@ -18,5 +18,9 @@ const PrimeraApp = ({ saludo }) =>{
 PrimeraApp.propTypes = {
     saludo: PropTypes.string.isRequired
 }
+
+PrimeraApp.defaultProps={
+    subtitulo: 'Soy un subtitulo'
+} 
 
 export default PrimeraApp;
