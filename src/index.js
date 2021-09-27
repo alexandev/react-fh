@@ -7,5 +7,5 @@ import CounterApp from './CounterApp';
 const divRoot = document.querySelector('#root')
 console.log(divRoot)
 
-ReactDOM.render(<CounterApp value={123}/>, divRoot)
+ReactDOM.render(<CounterApp value={10}/>, divRoot)
 
